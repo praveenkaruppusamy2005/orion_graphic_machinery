@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.app-header {
+    width: 100vw;
+   
+    background-color: #000000; /* dark blue like screenshot */
+    border-top: 2px solid #0a141a;
+}
+
+.header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #e6edf3;
+}
+.brand-logo { height: 54px; width: 54px; border-radius: 50%;}
+.brand-name { margin: 0; font-size: 24px; color: #ffffff; font-weight: 800; }
+.brand-sep { color: #3a4a55; font-size: 24px; }
+.brand-tagline { margin: 0; color: #cbd5e1; }
+.brand-tagline .cta { color: #8bb7ff; text-decoration: underline; }
+
+.header-actions { display: flex; align-items: center; gap: 16px; }
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.action-icon {
+    height: 44px;
+    width: 44px;
+    display: grid;
+    place-items: center;
+    background: #001219;
+    border-radius: 50%;
+    outline: 1px solid #2a3b47;
+}
+.action-icon img { height: 24px; width: 24px; }
+.action-text { display: flex; flex-direction: column; }
+.action-title { color: #a3b1bd; font-size: 11px; letter-spacing: 0.08em; }
+.action-detail { color: #ffffff; font-size: 14px; font-weight: 600; }

@@ -1,0 +1,127 @@
+.business-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 24px;
+    margin-top: 32px;
+    padding: 0;
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+}
+@media (max-width: 900px) {
+  .business-profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .business-profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.business-profile-card {
+   
+    border-radius: 10px;
+    padding: 24px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: #fff;
+    min-height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.business-profile-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+.fourth-container {
+    width: 100vw;
+    background-color: #ffffff;
+    color: #0b1318;
+    min-height: 80vh;
+    margin-top: 0;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fourth-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 48px 32px 32px 32px;
+    position: relative;
+    background-color: #0b1318;
+    min-height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16px;
+}
+.fourth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fourth-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b1318;
+}
+.section-header-left {
+    flex: 1;
+}
+
+.section-kicker1 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    font-weight: 800;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.kicker-square1 {
+    width: 8px;
+    height: 8px;
+    background-color: #ff6b35;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.section-title {
+    margin: 0;
+    font-size: clamp(28px, 5vw, 56px);
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.business-profile-list {
+    margin-top: 32px;
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 500px;
+}
+.business-profile-list li {
+    margin-bottom: 16px;
+    padding-left: 0;
+    line-height: 1.6;
+}
+.business-profile-list li strong {
+    color: #ffffff;
+    font-weight: 700;
+    margin-right: 8px;
+}
