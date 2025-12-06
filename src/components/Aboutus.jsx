@@ -272,7 +272,8 @@ export default function AboutUs() {
         <div className="our-team-inner" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <p className="pp">Our Team</p>
           <p className="ps">
-            Our team is segregated into various units like procurement, manufacturing, quality testing…
+            Our team is segregated into various units namely procurement, manufacturing, quality testing, warehousing & packaging, R and D and sales & marketing. Each of these units plays complement each other and help us achieve desired results. The dedication of our employees is contagious and helps motivate everyone to give 100% effort on a daily basis. As a closely-knit family, we organize workshops, training sessions and learning programs on a regular basis.
+
           </p>
         </div>
       </section>
@@ -310,23 +311,7 @@ export default function AboutUs() {
 
 
       {/* TESTIMONIAL SECTION */}
-      <section className="testimonial-section">
-        <div className="testimonial-inner testimonial-full" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span className="testimonial-label">TO KNOW MORE ABOUT US</span>
-          <h2 className="testimonial-heading">What Our Customers Say?</h2>
-
-          <div className="testimonial-quote-icon">
-            <span className="testimonial-quote">&#10077;</span>
-          </div>
-
-          {/* FIXED: Clean usage */}
-          <CarouselReview />
-        </div>
-      </section>
-
-
-      {/* RATINGS SECTION */}
-      <section className="ratings-section">
+       <section className="ratings-section">
         <div className="ratings-inner ratings-full" style={{ width: '100vw', maxWidth: '100%', margin: '0 auto', background: '#fff', borderRadius: '0', boxShadow: 'none', padding: '2.5rem 0 2.5rem 0' }}>
           <h2 className="ratings-heading" style={{ textAlign: 'center', fontSize: '2.2rem', fontWeight: 800, color: '#111', marginBottom: '2.2rem', letterSpacing: '-1px' }}>Ratings & Reviews</h2>
           <div className="ratings-main-row" style={{ display: 'flex', justifyContent: 'center', alignItems: 'stretch', gap: '3.5rem', flexWrap: 'wrap' }}>
@@ -371,6 +356,23 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      <section className="testimonial-section">
+        <div className="testimonial-inner testimonial-full" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <span className="testimonial-label">TO KNOW MORE ABOUT US</span>
+          <h2 className="testimonial-heading">What Our Customers Say?</h2>
+
+          <div className="testimonial-quote-icon">
+            <span className="testimonial-quote">&#10077;</span>
+          </div>
+
+          {/* FIXED: Clean usage */}
+          <CarouselReview />
+        </div>
+      </section>
+
+
+      {/* RATINGS SECTION */}
+     
 
     </div>
   );
