@@ -53,9 +53,9 @@ function Home() {
       <nav className="top-nav-bar" style={{position: 'relative'}}>
         <div className="top-nav-inner">
           <a href="/" className="top-nav-link active">HOME</a>
-          <a href="#" className="top-nav-link">About Us</a>
+          <a href="/about" className="top-nav-link">About Us</a>
           <a href="#" className="top-nav-link">Our Product Range</a>
-          <a href="#" className="top-nav-link">CONTACT US</a>
+          <a href="#" className="top-nav-link">Contact Us</a>
           <div className="top-nav-search">
             {!searchOpen ? (
               <span className="top-nav-search-icon" onClick={openSearch} style={{cursor:'pointer'}}>

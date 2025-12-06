@@ -1,0 +1,160 @@
+/* PAGE */
+.reviews-page {
+  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
+  min-height: 100vh;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* TITLES */
+.reviews-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: #1a1f36;
+}
+
+.reviews-subtitle {
+  text-align: center;
+  color: #5e6a75;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  font-size: 1.15rem;
+}
+
+/* MARQUEE ROW */
+.reviews-marquee-row {
+  margin: 2.8rem 0;
+}
+
+.reviews-marquee {
+  display: flex;
+  gap: 2.2rem;
+}
+
+/* CARD */
+.marquee-card {
+  min-width: 350px;
+  max-width: 350px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform 0.25s ease;
+}
+.marquee-card:hover {
+  transform: translateY(-6px) scale(1.025);
+}
+
+/* HEADER */
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+/* AVATAR */
+.review-avatar {
+  width: 2.9rem;
+  height: 2.9rem;
+  background: #e0e0e0;
+  color: #222;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(255, 214, 0, 0.15);
+}
+
+/* NAME + LOCATION */
+.review-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.review-location {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* DATE */
+.review-date {
+  margin-left: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* STARS */
+.review-stars {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: #ffd600;
+  text-shadow: 0 1px 4px rgba(255, 214, 0, 0.18);
+}
+
+/* PRODUCT TITLE */
+.review-product {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* TEXT */
+.review-text {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.45;
+}
+
+/* TAGS */
+.review-tags {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.review-tag {
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.review-tag.response {
+  color: #000000;
+}
+.review-tag.quality {
+  color: #000000;
+}
+.review-tag.delivery {
+  color: #000000;
+}
+
+/* Fade Edges */
+.fade-edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #f8fafc, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #f8fafc, transparent);
+}
