@@ -42,31 +42,37 @@ function CarouselReview() {
 
   return (
     <>
-      <div style={{ width: '100vw', maxWidth: '100%', margin: '0 auto', overflow: 'hidden' }}>
+      <div style={{ width: '100vw', maxWidth: '100%', margin: '0 auto', position: 'relative', overflow: 'hidden' }}>
+        
+        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 60, zIndex: 2, pointerEvents: 'none', background: 'linear-gradient(to right, #fff 80%, transparent)' }} />
+        
+        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 60, zIndex: 2, pointerEvents: 'none', background: 'linear-gradient(to left, #fff 80%, transparent)' }} />
         <Marquee pauseOnHover={true} speed={30} gradient={false} className="testimonial-marquee">
           {reviews.map((review, idx) => (
-            <div className="testimonial-carousel-review" key={idx} style={{ minWidth: 320, maxWidth: 340, margin: '0 18px', background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px 0 rgba(60,80,120,0.08)', padding: '22px 24px 18px 24px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-              <div className="testimonial-review-header" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div className="testimonial-review-avatar">{review.avatar}</div>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <div className="testimonial-review-name">{review.name}</div>
-                    <div className="testimonial-review-location">{review.location}</div>
+                <div className="testimonial-carousel-review" key={idx} style={{ width: 400, height: 270, minWidth: 340, margin: '0 18px', background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px 0 rgba(60,80,120,0.08)', padding: '22px 24px 18px 24px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', boxSizing: 'border-box', justifyContent: 'flex-start', overflow: 'hidden' }}>
+                  <div className="testimonial-review-header" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', width: '100%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                        <div className="testimonial-review-avatar">{review.avatar}</div>
+                        <div>
+                          <div className="testimonial-review-name" style={{ fontWeight: 700 }}>{review.name}</div>
+                          <div className="testimonial-review-location" style={{ color: '#888', fontSize: '0.98rem' }}>{review.location}</div>
+                        </div>
+                      </div>
+                      <div className="testimonial-review-stars" style={{ marginLeft: 52, marginTop: 2 }}>{'\u2605'.repeat(review.stars)}{review.stars === 4 ? '\u2606' : ''}</div>
+                    </div>
+                    <div className="testimonial-review-date" style={{ marginLeft: 18, color: '#aaa', fontSize: '0.97rem', whiteSpace: 'nowrap' }}>{review.date}</div>
                   </div>
-                  <div className="testimonial-review-stars">{'\u2605'.repeat(review.stars)}{review.stars === 4 ? '\u2606' : ''}</div>
+                  <div className="testimonial-review-product" style={{ marginTop: 10, fontWeight: 600 }}>{review.product}</div>
+                  {review.text && <div className="testimonial-review-text" style={{ marginTop: 8, color: '#222', textAlign: 'left', fontSize: '1.01rem', lineHeight: 1.5 }}>{review.text}</div>}
+                  {review.tags?.length > 0 && (
+                    <div className="testimonial-review-tags" style={{ justifyContent: 'flex-start', marginTop: 8 }}>
+                      {review.tags.map(tag => (
+                        <span key={tag} style={{ marginRight: 12 }}>{tag} <span style={{ color: '#4caf50', marginLeft: 2 }}>&#128077;</span></span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <div className="testimonial-review-date">{review.date}</div>
-              </div>
-              <div className="testimonial-review-product">{review.product}</div>
-              {review.text && <div className="testimonial-review-text">{review.text}</div>}
-              {review.tags?.length > 0 && (
-                <div className="testimonial-review-tags" style={{ justifyContent: 'center' }}>
-                  {review.tags.map(tag => (
-                    <span key={tag} style={{ marginRight: 12 }}>{tag} <span style={{ color: '#4caf50', marginLeft: 2 }}>&#128077;</span></span>
-                  ))}
-                </div>
-              )}
-            </div>
           ))}
         </Marquee>
       </div>

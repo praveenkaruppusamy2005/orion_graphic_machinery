@@ -1,0 +1,322 @@
+/* Modern Contact Us Page Styles */
+.contactus-modern-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: #f8fafc;
+  padding: 3.5rem 0;
+  min-height: 80vh;
+  justify-content: center;
+}
+
+.contactus-person-dark {
+  background: #222b45;
+  color: #fff;
+  border-radius: 18px;
+  padding: 2.5rem 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+.contactus-person-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.contactus-person-icon {
+  font-size: 2.8rem;
+  margin-right: 1.2rem;
+  color: #f4b400;
+}
+.contactus-person-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.contactus-person-role {
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #f4b400;
+  margin-left: 0.5rem;
+}
+.contactus-person-address {
+  margin-bottom: 1rem;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.contactus-person-icon-sm {
+  font-size: 1.1rem;
+  color: #f4b400;
+  margin-right: 0.5rem;
+}
+.contactus-person-getdir {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #f4b400;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.05rem;
+}
+.contactus-person-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.08rem;
+  margin-top: 0.5rem;
+}
+.contactus-person-phone {
+  font-weight: 700;
+  color: #fff;
+  margin-right: 1rem;
+}
+.contactus-person-sms {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #f4b400;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.contactus-person-sms:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.contactus-modern-left {
+  flex: 1 1 420px;
+  max-width: 520px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactus-modern-label {
+  color: #f4b400;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+.contactus-modern-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #222b45;
+  margin-bottom: 2.2rem;
+  line-height: 1.15;
+}
+.contactus-modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contactus-modern-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.contactus-modern-form input,
+.contactus-modern-form textarea {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  background: #fff;
+  color: #222b45;
+  outline: none;
+  transition: border 0.2s;
+}
+.contactus-modern-form input:focus,
+.contactus-modern-form textarea:focus {
+  border-color: #f4b400;
+}
+.contactus-modern-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.98rem;
+  color: #5e6a75;
+}
+.contactus-modern-submit {
+  background: #f4b400;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  box-shadow: 0 2px 8px rgba(244,180,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.contactus-modern-submit:hover {
+  background: #222b45;
+  box-shadow: 0 4px 16px rgba(34,43,69,0.13);
+}
+.contactus-modern-right {
+  flex: 1 1 420px;
+  max-width: 520px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.2rem;
+}
+.contactus-modern-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 rgba(60,80,120,0.08);
+  padding: 2.2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contactus-modern-card-row {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: space-between;
+}
+.contactus-modern-card-title {
+  font-weight: 700;
+  color: #222b45;
+  font-size: 1.08rem;
+  margin-bottom: 0.5rem;
+}
+.contactus-modern-card-info {
+  color: #5e6a75;
+  font-size: 1.01rem;
+  line-height: 1.5;
+}
+.contactus-modern-social-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+.contactus-modern-social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+.contactus-modern-social-icon {
+  font-family: 'FontAwesome';
+  font-size: 1.5rem;
+  color: #222b45;
+  background: #f8fafc;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.contactus-modern-social-icon:hover {
+  background: #f4b400;
+  color: #fff;
+}
+.contactus-modern-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+}
+.contactus-modern-stats-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #222b45;
+}
+.contactus-modern-stats-label {
+  color: #5e6a75;
+  font-size: 1.08rem;
+  margin-top: 0.2rem;
+}
+@media (max-width: 900px) {
+  .contactus-modern-container {
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 2rem 0;
+    min-height: unset;
+  }
+  .contactus-modern-left, .contactus-modern-right {
+    max-width: 100%;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .contactus-modern-card {
+    padding: 1.2rem 1rem;
+  }
+  .contactus-person-dark {
+    margin-bottom: 1.2rem;
+    min-width: unset;
+    max-width: 100%;
+    padding: 1.2rem 0.7rem;
+    border-radius: 12px;
+  }
+  .contactus-modern-form {
+    gap: 0.7rem;
+  }
+  .contactus-modern-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .dir-btn {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+  }
+  iframe {
+    width: 100% !important;
+    min-height: 220px !important;
+    border-radius: 8px !important;
+  }
+}
+@media (max-width: 600px) {
+  .contactus-modern-heading {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .contactus-person-title {
+    font-size: 1.1rem;
+  }
+  .contactus-person-dark {
+    padding: 0.7rem 0.3rem;
+    border-radius: 10px;
+  }
+  .contactus-modern-submit {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+  .dir-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.7rem;
+  }
+  iframe {
+    min-height: 160px !important;
+    border-radius: 6px !important;
+  }
+}
+
+.dir-btn {
+  background: #f4b400;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(244,180,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  width: 90%;
+  align-self: center;
+  margin-top:20px ;
+}
+.dir-btn:hover {
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(34,43,69,0.13);
+  color:#f4b400
+}

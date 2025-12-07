@@ -5,6 +5,22 @@
   min-height: 100%;
   width: 100%;
 }
+@media (max-width: 900px) {
+  #root {
+    padding: 0.7rem;
+  }
+  html, body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  #root {
+    padding: 0.3rem;
+  }
+  html, body {
+    font-size: 13px;
+  }
+}
 html, body {
   height: 100%;
   width: 100%;

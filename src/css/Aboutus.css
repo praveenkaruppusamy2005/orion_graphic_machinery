@@ -73,6 +73,42 @@
   margin-bottom: 18px;
   letter-spacing: -1px;
 }
+@media (max-width: 900px) {
+  .testimonial-heading, .ratings-heading {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .testimonial-carousel-btn, .testimonial-more-reviews-btn {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+  .testimonial-inner.testimonial-full {
+    padding: 0.7rem;
+  }
+  .testimonial-carousel-review {
+    min-width: 220px;
+    max-width: 220px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial-heading, .ratings-heading {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .testimonial-carousel-btn, .testimonial-more-reviews-btn {
+    font-size: 0.95rem;
+    padding: 0.3em 0.7em;
+  }
+  .testimonial-inner.testimonial-full {
+    padding: 0.3rem;
+  }
+  .testimonial-carousel-review {
+    min-width: 160px;
+    max-width: 160px;
+    padding: 0.5rem;
+  }
+}
 .testimonial-label, .ratings-label {
   font-size: 1.1rem;
   color: #f4b400;
